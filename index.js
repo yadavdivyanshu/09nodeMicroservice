@@ -21,11 +21,14 @@ app.get("/vendors/:id", (req, res) => {
     var respData = vendorData.vendors.find((element) => {
         return element.id === req.params.id;
     });
-    if (typeof (respData) != 'undefined')
-        res.json(respData);
-    else
-        res.json({
-            "message": "No vendor found"
-        });
-})
+    // if (typeof (respData) != 'undefined')
+    //     res.json(respData);
+    // else
+    //     res.json({
+    //         "message": "No vendor found"
+    //     });
+    typeof (respData) != 'undefined' ? res.json(respData) : res.json({
+        "message": "No vendor found"
+    });
+});
 // console.log("The server is now running on http://localhost:3001");
