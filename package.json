@@ -1,0 +1,23 @@
+{
+  "name": "nodemicroservice",
+  "version": "1.0.0",
+  "description": "testing express and using microservices using nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ."
+  },
+  "keywords": [
+    "node",
+    "anubhav",
+    "express"
+  ],
+  "author": "Divyanshu",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
