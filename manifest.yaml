@@ -1,0 +1,8 @@
+applications:
+- name: expressTestingNodeJs
+  random-route: true
+  path: ./
+  memory: 512M
+  buildpacks:
+    - nodejs_buildpack
+  instances: 1
